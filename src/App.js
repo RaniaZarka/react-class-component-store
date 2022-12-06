@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import data from "./data.json";
 import Products from "./components/Products";
+import Clock from "./components/clock";
 import Cart from "./components/Cart";
 
 class App extends React.Component {
@@ -41,7 +42,7 @@ class App extends React.Component {
       <div className="grid-container">
         <header>
           <a href="/"> Lemonade Web Shop</a>
-          {/* <Counter /> */}
+          <Clock />
         </header>
         <main>
           <div className="content">
