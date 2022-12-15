@@ -6,14 +6,14 @@ export default class Products extends Component {
     this.state = {
       product: null,
     };
-
-    console.log(props);
   }
+
   render() {
+    const products = this.props.products;
     return (
       <div>
         <ul className="products">
-          {this.props.products.map((product) => (
+          {products.map((product) => (
             <li key={product.id}>
               <div className="product">
                 <div className="product-price">
