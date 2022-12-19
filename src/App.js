@@ -37,8 +37,6 @@ class App extends React.Component {
 
   render() {
     return (
-      // <div className="App">
-      //   <header className="App-header">
       <div className="grid-container">
         <header>
           <a href="/"> Lemonade Web Shop</a>

@@ -1,19 +1,11 @@
 import React, { Component } from "react";
 
 export default class Products extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      product: null,
-    };
-  }
-
   render() {
-    const products = this.props.products;
     return (
       <div>
         <ul className="products">
-          {products.map((product) => (
+          {this.props.products.map((product) => (
             <li key={product.id}>
               <div className="product">
                 <div className="product-price">
